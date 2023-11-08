@@ -77,6 +77,9 @@
                   quantity.innerHTML=Number(quantity.innerHTML)-1;
                   current.innerHTML=Number(current.innerHTML)-Number(price.innerHTML);
                   total.innerHTML=Number(total.innerHTML)-Number(price.innerHTML);
+                  
+                  let t = parseFloat(elementTotal.value);
+                  console.log(t)
                  }
                 }
                  
@@ -155,8 +158,12 @@
                    </tr>
                  </table>
                  
-                 ИТОГО:<b id="total" type="Number" name="total" value="">0</b> ₽<br><br>
+                 ИТОГО:<b id="totalvalue" type="Number" name="total" value="">0</b> ₽<br><br>
+                 <p>Результат: <span id="total"></span></p>
                 </body>
+
+
+
                 <h3>Напитки (оплата на месте):</h3>
                     <input type="Checkbox" name="drink"  value="tea" checked> Чай
                     <input type="Checkbox" name="drink"   value="coffee" checked> Кофе
