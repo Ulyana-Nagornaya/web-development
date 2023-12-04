@@ -62,7 +62,7 @@
       "vendor_code": "4448e",
       "description": "Описание 8",
       "price": 800,
-      "img": "./Bakery/Хачапури по-аджарски.jpg"
+      "img": "./Bakery/Хачапури%20по-аджарски.jpg"
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "vendor_code": "444e",
       "description": "Описание 9",
       "price": 400,
-      "img": "./Bakery/Хачапури по-мигрельски.jpg"
+      "img": "./Bakery/Хачапури%20по-мигрельски.jpg"
     }
     ,
     {
