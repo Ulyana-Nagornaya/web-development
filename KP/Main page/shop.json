@@ -5,7 +5,7 @@
       "vendor_code": "111",
       "description": "Описание 1",
       "price": 100,
-      "img": "./Cold dish/Бадриджани.jpg"
+      "img": "./Cold%20dish/Бадриджани.jpg"
     },
     {
       "id": "2",
@@ -13,7 +13,7 @@
       "vendor_code": "222",
       "description": "Описание 2",
       "price": 200,
-      "img": "./Cold dish/Лобио.jpg"
+      "img": "./Cold%20dish/Лобио.jpg"
     },
     {
       "id": "3",
@@ -21,7 +21,7 @@
       "vendor_code": "333",
       "description": "Описание 3",
       "price": 300,
-      "img": "./Cold dish/Пхали.jpg"
+      "img": "./Cold%20dish/Пхали.jpg"
     },
     {
       "id": "4",
@@ -29,7 +29,7 @@
       "vendor_code": "444e",
       "description": "Описание 4",
       "price": 400,
-      "img": "./Hot dish/Хинкали.jpg"
+      "img": "./Hot%20dish/Хинкали.jpg"
     }
     ,
     {
@@ -38,7 +38,7 @@
       "vendor_code": "4445e",
       "description": "Описание 6",
       "price": 400,
-      "img": "./Hot dish/Чакапули.jpg"
+      "img": "./Hot%20dish/Чакапули.jpg"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "vendor_code": "4446e",
       "description": "Описание 6",
       "price": 400,
-      "img": "./Hot dish/Чашушули.jpg"
+      "img": "./Hot%20dish/Чашушули.jpg"
     },
     {
       "id": "7",
