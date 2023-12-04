@@ -1,11 +1,11 @@
 [
     {
       "id": "1",
-      "title": "Товар 1",
+      "title": "Тов",
       "vendor_code": "111",
       "description": "Описание 1",
       "price": 100,
-      "img": "up.jpg"
+      "img": "../Cold dish/Бадриджани.jpg"
     },
     {
       "id": "2",
