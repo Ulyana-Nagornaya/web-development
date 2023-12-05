@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "Бадриджани",
-      "vendor_code": "111",
+      "vendor_code": "cold1",
       "description" : "",
       "price": 450,
       "img": "./Cold%20dish/Бадриджани.jpg"
@@ -10,7 +10,7 @@
     {
       "id": "2",
       "title": "Лобио",
-      "vendor_code": "222",
+      "vendor_code": "cold2",
       "description" : "",
       "price": 360,
       "img": "./Cold%20dish/Лобио.jpg"
@@ -18,7 +18,7 @@
     {
       "id": "3",
       "title": "Пхали",
-      "vendor_code": "333",
+      "vendor_code": "cold3",
       "description" : "",
       "price": 550,
       "img": "./Cold%20dish/Пхали.jpg"
@@ -26,7 +26,7 @@
     {
       "id": "4",
       "title": "Хинкали",
-      "vendor_code": "444e",
+      "vendor_code": "hot1",
       "description" : "",
       "price": 550,
       "img": "./Hot%20dish/Хинкали.jpg"
@@ -35,7 +35,7 @@
     {
       "id": "5",
       "title": "Чакапули",
-      "vendor_code": "4445e",
+      "vendor_code": "hot2",
       "description" : "",
       "price": 490,
       "img": "./Hot%20dish/Чакапули.jpg"
@@ -43,7 +43,7 @@
     {
       "id": "6",
       "title": "Чашушули",
-      "vendor_code": "4446e",
+      "vendor_code": "hot3",
       "description" : "",
       "price": 480,
       "img": "./Hot%20dish/Чашушули.jpg"
@@ -51,7 +51,7 @@
     {
       "id": "7",
       "title": "Мчади",
-      "vendor_code": "4447e",
+      "vendor_code": "bakery1",
       "description" : "",
       "price": 490,
       "img": "./Bakery/Мчади.jpg"
@@ -59,7 +59,7 @@
     {
       "id": "8",
       "title": "Хачапури по-аджарски",
-      "vendor_code": "4448e",
+      "vendor_code": "bakery2",
       "description" : "",
       "price": 450,
       "img": "./Bakery/Хачапури%20по-аджарски.jpg"
@@ -67,7 +67,7 @@
     {
       "id": "9",
       "title": "Хачапури по-мегрельски",
-      "vendor_code": "444e",
+      "vendor_code": "bakery3",
       "description" : "",
       "price": 420,
       "img": "./Bakery/Хачапури%20по-мегрельски.jpg"
@@ -76,7 +76,7 @@
     {
       "id": "10",
       "title": "Напитки",
-      "vendor_code": "44410e",
+      "vendor_code": "drinks",
       "description" : "",
       "price": 900,
       "img": "./Bakery/drinks.jpg"

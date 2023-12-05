@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Магазин</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc400;
+            }
+        h1 {
+            color: #fce083;
+            text-align: center;
+            text-shadow: 1px 1px 1px #000;
+            }
+        h2 {
+            color: #157218;
+            text-align: center;
+            }
+        button[type="submit"] {
+                padding: 5px 10px;
+                background-color: #157218;
+                color: #ffffff;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+        button[type="submit"]:hover {
+                background-color: #923737;
+                }
+        ul a.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: #ffc400;
+            position: fixed;
+            height: 5%;
+            overflow: auto;
+    }
+        li {
+            color:#ffc400
+        }
+        li a {
+            display: block;
+            color: #923737;
+            padding: 8px 5px;
+            text-decoration: none;
+        }
+
+        li a.left {
+            background-color: #923737;
+            color: white;
+        }
+
+        li a:hover:not(.left) {
+            background-color: #157218;
+            color: white;
+                .left {
+                    background-color: #d46422ab;
+                }
+        </style>
+    </head>
+    <div class="container">
+
+        <header class="card" style="height: 1.rem; background-image: url(room.jpg);">
+            <div class="card-body bg-color">
+                <h5 class="card-title"><h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1></h5>
+            </div>
+        </header>
+        <img href="./Cold dish/Бадриджани.jpg"> 
+
+<main>
+    <div class="container" style="background-color:#92373793;">
+        <!--начало уникального содержания страницы-->
+         <div class="card-body">
+             <h3 class='card-title text-center' style ="color:#960c0c;" >Выбор блюд</h3>
+             <input type="radio" id="title" name="sort"  onchange="sort()" > По названию </input>
+              <input type="radio" id="price" name="sort" onchange="sort()"> По цене  </input>
+             <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" >
+                 <input name="q" type="hidden" value="search">
+                 <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert"  >
+                 <!--начало генерируемого фрагмента кода -->
+                 </ul>
+                 <button class="btn btn-primary" type="Submit" value="В корзину">В корзину</button>
+             </form>
+         </div>
+         <!--окончание уникального содержания страницы-->
+ </div>
+</main>     
+    <div class="card">
+        <div class="card-body">
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src='shop.js'> </script>
+</html>

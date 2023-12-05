@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Georgia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #ffc400;;
             }
         h1 {
-            color: #923737;
+            color: #fce083;
             text-align: center;
+            text-shadow: 4px 2px 1px #000000;
             }
         h2:nth-of-type(1) {
             color: #157218;
@@ -36,35 +40,7 @@
         button[type="submit"]:hover {
                 background-color: #923737;
                 }
-        ul:nth-of-type(1) {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 10%;
-            background-color: #ffc400;
-            position: fixed;
-            height: 40%;
-            overflow: auto;
-    }
-        li a {
-            display: block;
-            color: #923737;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
 
-        li a.left {
-            background-color:  #923737;
-            color: white;
-        }
-        li a:focus-visible{
-            background-color: #4CAF50;
-            color: white;
-        }
-        li a.hot {
-            background-color: #157218;
-            color: white;
-        }
         li a:hover:not(.left) {
             background-color: #157218;
             color: white;
@@ -77,34 +53,42 @@
 
 
 <body> 
-<table>
-    <tr>
-        <td>
-            <a href="../room.html"  align="center" target="_blank"><img src="../room.jpg" height="100px" width="170" name="home"></a> 
-        </td>
-        <td width="1000">
-            <h1 align="center">Ресторан грузинской кухни<br>Georgia</h1>
-        </td> 
-        <td>
-            <a href="../room.html"  align="right" target="_blank"><img src="../room.jpg" height="100px"width="170" name="home"></a> 
-        </td>
-    </tr> 
+
+        <div class="container">
+
+            <header class="card" style="height: 1.rem; background-image: url(../room.jpg);">
+                <div class="card-body bg-color">
+                    <h5 class="card-title"><h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1></h5>
+                </div>
+            </header>
+        <header>
+            <nav id="navigation" class="container">
+                <ul class="nav nav-tabs" style = "background-color: #923737;">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:aliceblue;" href="../index.html"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="background-color: #157218; color: #ffffff;"  style="background-color: #157218; color: #ffffff;" href="../Cold dish/Cold dish.html"> Холодные блюда </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:aliceblue;" href="../Hot dish/Hot dish.html"> Горячие блюда </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:aliceblue;" href="../Bakery/Bakery.html"> Выпечка </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
 <table align="center"><br><br><br>
         <tr>    
             <td align="center">&nbsp;&nbsp;
-                <a href="./KRform.html"><button type="submit">Заказать столик</button></a>
+                <a href="../form.html"><button type="submit">Заказать столик</button></a>
             </td>
         </tr>
         </tbody>
     </table>
 
-<ul>
-    <li><a class="left" href="../index.html"><b>Home</b></a></li>
-    <li><a class='hot' href=''><b>Холодные блюда &#x2605;</b></a> </li>
-    <li><a href="../Hot dish/Hot dish.html"><b>Горячие блюда</b> &#x2606;</a></li>
-    <li><a href="../Bakery/Bakery.html"><b>Выпечка &#x2606;</b></a></li></div>
-</ul>
 <br>
 <br>
 <table align="center" >
@@ -199,4 +183,8 @@
 </table>
 
 </body>
+<div class="card">
+    <div class="card-body">
+    </div>
+</div>
 </html>
