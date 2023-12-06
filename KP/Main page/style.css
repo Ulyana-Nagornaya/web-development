@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffc400;
+    }
+h1 {
+    color: #fce083;
+    text-align: center;
+    text-shadow: 4px 2px 1px #000000;
+    }
+h2 {
+    color: #157218;
+    text-align: center;
+    }
+h3 {
+    color: #941616;
+    text-align: center;
+    } 
+button[type="submit"] {
+        padding: 5px 10px;
+        background-color: #157218;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+button[type="submit"]:hover {
+        background-color: #923737;
+        }
+
+
+li a:hover:not(.left) {
+    background-color: #157218;
+    color: white;
+        .left {
+            background-color: #d46422ab;
+        }

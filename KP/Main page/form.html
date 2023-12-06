@@ -61,44 +61,44 @@
 <main>
 <form action="https://www.ya.ru/search?" id="UserEnter" name="UserEnter" target="_blank">
 <div class="information">        
-      <label for="exampleInputEmail1" class="form-label"><h3>Информация о бронировании</h3></label> <br>
-      <label for="exampleInputEmail1" class="form-label">Количество гостей:</label>
-        <input type="Number" min="0" class="form-control" id="exampleInputEmail1" style="background-color: bisque;" name="guests" required>
-      <label for="exampleInputEmail1" class="form-label" >Дата проведения:</label>
+      <label class="form-label"><h3>Информация о бронировании</h3></label> <br>
+      <label class="form-label">Количество гостей:</label>
+        <input type="Number" min="0" class="form-control"  style="background-color: bisque;" name="guests" required>
+      <label  class="form-label" >Дата проведения:</label>
         <input type="date" class="form-control" style="background-color: bisque;" name="user_date" required>
-      <label for="exampleInputEmail2" class="form-label" >Phone number</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"style="background-color: bisque;" name="phone-number">
-      <label for="exampleInputEmail1" class="form-label" >E-mail</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"style="background-color: bisque;" name="e-mail">
+      <label  class="form-label" >Phone number</label>
+        <input type="text" class="form-control"  style="background-color: bisque;" name="phone-number">
+      <label class="form-label" >E-mail</label>
+        <input type="text" class="form-control" style="background-color: bisque;" name="e-mail">
 </div>
 
 <div class="drinks"> 
-    <label for="exampleInputEmail1" class="form-label"><h3>Напитки (оплата на месте):</h3></label> <br>
-    <label class="form-check-label" for="exampleCheck1"><h5>Чай</h5></label>
+    <label class="form-label"><h3>Напитки (оплата на месте):</h3></label> <br>
+    <label class="form-check-label"  ><h5>Чай</h5></label>
         <input type="checkbox" class="form-check-input" style="width:25px; height:25px" name="drink" value="tea" checked><br>
-    <label class="form-check-label" for="exampleCheck1"><h5>Кофе</h5></label>
-        <input type="checkbox" class="form-check-input" style="width:25px; height:25px" name="drink" value="coffee" checked><br>
-    <label class="form-check-label" for="exampleCheck1"><h5>Лимонад</h5></label>
+    <label class="form-check-label"><h5>Кофе</h5></label>
+        <input type="checkbox" style="width:25px; height:25px" name="drink" value="coffee" checked><br>
+    <label class="form-check-label" ><h5>Лимонад</h5></label>
         <input type="checkbox" class="form-check-input" style="width:25px; height:25px" name="drink" value="lemonade" checked><br>
     
 </div>
 
 
 <div class="payment"
-            <label for="exampleInputEmail1" class="form-label"><h3>Оплата заказа:</h3></label> <br>
-            <label class="form-check-label" for="exampleCheck1"><h5>Способ оплаты:</h5></label><br>
-            <label class="form-check-label" for="exampleCheck1"><h5>Мир</h5></label>
+            <label class="form-label"><h3>Оплата заказа:</h3></label> <br>
+            <label class="form-check-label" ><h5>Способ оплаты:</h5></label><br>
+            <label class="form-check-label"><h5>Мир</h5></label>
               <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="mir"><br>
-            <label class="form-check-label" for="exampleCheck1"><h5>Visa</h5></label>
+            <label class="form-check-label" ><h5>Visa</h5></label>
               <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="Visa"><br>
-            <label class="form-check-label" for="exampleCheck1"><h5>Mastercard</h5></label>
+            <label class="form-check-label" ><h5>Mastercard</h5></label>
               <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="Mastercard"><br><br>
         
-            <label class="form-check-label" for="exampleCheck1"><h5>Номер карты:</h5></label><br>
+            <label class="form-check-label" ><h5>Номер карты:</h5></label><br>
               <input type="text" maxlength="16" class="form-control" style="background-color: bisque; width:200px; height:25px" name="cardnumber" required><br>
-            <label class="form-check-label" for="exampleCheck1"><h5>Срок действия:</h5></label><br>
+            <label class="form-check-label" ><h5>Срок действия:</h5></label><br>
               <input type="date" class="form-control" style="background-color: bisque; width:200px; height:25px" name="validity" required><br>
-             <label class="form-check-label" for="exampleCheck1"><h5>CVV/CVC:</h5></label><br>
+             <label class="form-check-label"><h5>CVV/CVC:</h5></label><br>
               <input type="Password" size="3" max_lenght="3" class="form-control" style="background-color: bisque; width:200px; height:25px" name="CVV" required><br>
         </div>
 

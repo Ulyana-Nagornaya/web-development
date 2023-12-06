@@ -20,7 +20,7 @@ async function getResponcePrice() {
     let content = await responce.text()
     console.log(content)
     content = JSON.parse(content)
-    content = content.splice(0, 9)
+    content = content.splice(0, 10)
     //console.log(content)
 
     //let key
@@ -55,7 +55,7 @@ async function getResponceTitle() {
     let content = await responce.text()
     console.log(content)
     content = JSON.parse(content)
-    content = content.splice(0, 9)
+    content = content.splice(0, 10)
     //console.log(content)
 
     //let key
