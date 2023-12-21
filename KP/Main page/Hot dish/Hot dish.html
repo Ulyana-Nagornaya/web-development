@@ -3,50 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Georgia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc400;
+            }
+        h1 {
+            color: #923737;
+            text-align: center;
+            }
+        h2:nth-of-type(1) {
+            color: #157218;
+            text-align: center;
+            }
+        h3 {
+            color: #941616;
+            text-align: center;
+            }
+            
+            button[type="submit"] {
+                padding: 5px 10px;
+                background-color: #157218;
+                color: #ffffff;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+        button[type="submit"]:hover {
+                background-color: #923737;
+                }
+        ul:nth-of-type(1) {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-color: #ffc400;
+            position: fixed;
+            height: 40%;
+            overflow: auto;
+    }
+        li a {
+            display: block;
+            color: #923737;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.left {
+            background-color: #923737;
+            color: white;
+        }
+        li a.cold {
+            background-color: #157218;
+            color: white;
+        }
+
+        li a:hover:not(.left) {
+            background-color: #157218;
+            color: white;
+                .left {
+                    background-color: #4CAF50;
+                }
+    </style>
 </head>
 
 
 
 <body bgcolor="#87CEFA"> 
-    <div class="container">
-
-        <header class="card" style="height: 1.rem; background-image: url(../room.jpg);">
-            <div class="card-body bg-color">
-                <h5 class="card-title"><h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1></h5>
-            </div>
-        </header>
-    
-    <header>
-        <nav id="navigation" class="container">
-            <ul class="nav nav-tabs" style = "background-color: #923737;">
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="../index.html"> Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="../Cold dish/Cold dish.html"> Холодные блюда </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" style="background-color: #157218; color: #ffffff;" style="background-color: #157218; color: #ffffff;"  href="../Hot dish/Hot dish.html"> Горячие блюда </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="../Bakery/Bakery.html"> Выпечка </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<table>
+    <tr>
+        <td>
+            <a href="../room.html"  align="center" target="_blank"><img src="../room.jpg" height="100px" width="170" name="home"></a> 
+        </td>
+        <td width="1000">
+            <h1 align="center">Ресторан грузинской кухни<br>Georgia</h1>
+        </td> 
+        <td>
+            <a href="../room.html"  align="right" target="_blank"><img src="../room.jpg" height="100px" width="170" name="home"></a> 
+        </td>
+    </tr>
+</table>
 
     <table align="center"><br><br><br>
         <tr>    
             <td align="center">&nbsp;&nbsp;
-                <a href="../form.html"><button type="submit">Заказать столик</button></a>
+                <a href="./KRform.html"><button type="submit">Заказать столик</button></a>
             </td>
         </tr>
         </tbody>
     </table>
 
+<ul>
+    <li><a class="left" href="../index.html"><b>Home</b></a></li>
+    <li><a  href='../Cold dish/Cold dish.html'><b>Холодные блюда &#x2606;</b></a> </li>
+    <li><a class="cold"><b>Горячие блюда &#x2605;</b></a></li>
+    <li><a href="../Bakery/Bakery.html"><b>Выпечка &#x2606;</b></a></li></div>
+</ul>
 <br>
 <br>
 <table align="center">
@@ -59,19 +115,15 @@
     </tbody>
 </table>
 
-<div class="card">
-
-    <table class="table table-striped">
-      <tbody>
-
-          <tr>
-            <th> 
-                <a name="dish1"><img height="200" width="330" src="./Чакапули.jpg"></a>
-                <h3 align="center">490₽</h3>
-            </th>
-              
-            <td style="background-color:#ffc400;">
-                <h3 align='center'><u>Чакапули</u><br>ჩაქაფული</h3>
+<table cellspacing="2" cellpadding="5" align="center" border="2">
+    <tbody>
+    <tr>       
+        <td width="333" height="200"> 
+            <a name="dish1"><img height="200" width="330" src="./Чакапули.jpg"></a>
+            <h3 align="center">490₽</h3>
+        </td>
+        <td width="333">
+            <h3 align='center'><u>Чакапули</u><br>ჩაქაფული</h3>
             <li>&#x270E;&nbsp;COCTAB</li>
                 <ol><ol><ol>
                     <li>Баранина</li>
@@ -80,59 +132,52 @@
                     <li>Кинза, петрушка и укроп</li>
                     <li>Белое сухое вино...</li>
                     </ol>
-        <td>
-            <p align="center"><a href='https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BA%D0%B0%D0%BF%D1%83%D0%BB%D0%B8' target="_blank">
-                <img align="center" width="200" src="../QR/4.gif"></a>
-            <br><b>Узнайте больше о грузинской кухне прямо сейчас!</b></p>
         </td>
-
+    <td width="250">
+        <p align="center"><a href='https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BA%D0%B0%D0%BF%D1%83%D0%BB%D0%B8' target="_blank">
+            <img align="center" width="200" src="../QR/4.gif"></a>
+        <br><b>Узнайте больше о грузинской кухне прямо сейчас!</b></p>
+    </td>
     </tr>
-      </tbody>
-    </table>
-
+    </tbody>
+</table>
 <br>
-
-    <table class="table table-striped">
-      <tbody>
-
-          <tr>
-            <th> 
-                <a name="dish2"><img height="200" width="330" src="./Хинкали.jpg"></a> 
-                <h3 align="center">550₽</h3>
-            </th>
-              
-            <td style="background-color:#ffc400;">
-                <h3 align='center'><u>Ассорти хинкали</u><br>ხინკალი</h3>
-                <li>&#x270E;&nbsp;COCTAB</li>
-                    <ol><ol><ol>
-                        <li>Баранина</li>
-                        <li>Говядина</li>
-                        <li>Сыр сулугуни</li>
-                        <li>Картофель с грибами</li>
-                        <li>Кинза...</li>
-                        </ol>
-        <td>
-            <p align="center"><a href='https://ru.wikipedia.org/wiki/%D0%A5%D0%B8%D0%BD%D0%BA%D0%B0%D0%BB%D0%B8' target="_blank">
-                <img align="center" width="200" src="../QR/5.gif"></a>
-            <br><b>Узнайте больше о грузинской кухне прямо сейчас!</b></p>
-        </td>
-
-    </tr>
-      </tbody>
-    </table>
-
-<br>
-
-<table class="table table-striped">
+<table cellspacing="2" cellpadding="5" align="center" border="2">
     <tbody>
+    <tr>       
+        <td width="333" height="200"> 
+            <a name="dish2"><img height="200" width="330" src="./Хинкали.jpg"></a> 
+            <h3 align="center">550₽</h3>
+        </td>
+        <td width="333">
+            <h3 align='center'><u>Ассорти хинкали</u><br>ხინკალი</h3>
+            <li>&#x270E;&nbsp;COCTAB</li>
+                <ol><ol><ol>
+                    <li>Баранина</li>
+                    <li>Говядина</li>
+                    <li>Сыр сулугуни</li>
+                    <li>Картофель с грибами</li>
+                    <li>Кинза...</li>
+                    </ol>
+        </td>
+    <td width="250">
+        <p align="center"><a href='https://ru.wikipedia.org/wiki/%D0%A5%D0%B8%D0%BD%D0%BA%D0%B0%D0%BB%D0%B8' target="_blank">
+            <img align="center" width="200" src="../QR/5.gif"></a>
+        <br><b>Узнайте больше о грузинской кухне прямо сейчас!</b></p>
+    </td>
+    </tr>
+    </tbody>
+</table>
+<br>
 
-        <tr>
-            <td>
-                <a name="dish3"><img height="200" width="330" src="./Чашушули.jpg"></a>
-                <h3 align="center">480₽</h3>
-          </th>
-            
-          <td style="background-color:#ffc400;">
+<table cellspacing="2" cellpadding="5" align="center" border="2">
+    <tbody>
+    <tr>       
+        <td width="333" height="200"> 
+            <a name="dish3"><img height="200" width="330" src="./Чашушули.jpg"></a>
+            <h3 align="center">480₽</h3>
+        </td>
+        <td width="333">
             <h3 align='center'><u>Чашушули</u><br>ჩაშუშული</h3>
             <li>&#x270E;&nbsp;COCTAB</li>
                 <ol><ol><ol>
@@ -142,20 +187,16 @@
                     <li>Хмели-сунели</li>
                     <li>Кинза...</li>
                     </ol>
-      <td>
+        </td>
+    <td width="250">
         <p align="center"><a href='https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%88%D1%83%D1%88%D1%83%D0%BB%D0%B8' target="_blank">
             <img align="center" width="200" src="../QR/6.gif"></a>
         <br><b>Узнайте больше о грузинской кухне прямо сейчас!</b></p>
-      </td>
-
-  </tr>
+    </td>
+    </tr>
     </tbody>
-  </table>
+</table>
 
 
 </body>
-<div class="card">
-    <div class="card-body">
-    </div>
-</div>
 </html>

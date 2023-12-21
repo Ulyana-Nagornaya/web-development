@@ -3,63 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Georgia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc400;
+            }
+        h1 {
+            color: #923737;
+            text-align: center;
+            }
+        h2 {
+            color: #157218;
+            text-align: center;
+            }
+        button[type="submit"] {
+                padding: 5px 10px;
+                background-color: #157218;
+                color: #ffffff;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+        button[type="submit"]:hover {
+                background-color: #923737;
+                }
+        ul:nth-of-type(1) {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-color: #ffc400;
+            position: fixed;
+            height: 30%;
+            overflow: auto;
+    }
+        li a {
+            display: block;
+            color: #923737;
+            padding: 8px 5px;
+            text-decoration: none;
+        }
 
+        li a.left {
+            background-color: #923737;
+            color: white;
+        }
+
+        li a:hover:not(.left) {
+            background-color: #157218;
+            color: white;
+                .left {
+                    background-color: #d46422ab;
+                }
+        </style>
+    </head>
 </head>
 
-<body>
-    <div class="container">
-
-    <header class="card" style="height: 1.rem; background-image: url(room.jpg);">
-        <div class="card-body bg-color">
-            <h5 class="card-title"><h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1></h5>
-        </div>
- 
-
-        <div class="card-body">
-            <ul class="nav nav-tabs" style = "background-color: #923737;">
-                <li class="nav-item">
-                    <a class="nav-link active" style="background-color: #157218; color: #ffffff;" href="index.html"> Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="./Cold dish/Cold dish.html"> Холодные блюда </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="./Hot dish/Hot dish.html"> Горячие блюда </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:aliceblue;" href="./Bakery/Bakery.html"> Выпечка </a>
-                </li>
-            </ul>
-
-        <div class="dropdown-item"
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li style="color:bisque"><a class="nav-link " href="#button1">Холодные блюда</a>
-            </li>
-            <li style="color:bisque"><a class="dropdown-item" href="#button2">Горячие блюда</a>
-            </li>
-            <li style="color:bisque"><a class="dropdown-item" href="#button3">Выпечка</a>
-            </li>
-        </ul>
-    </header>
-
+<body> 
+<table>
+    <tr>
+        <td>
+            <a href="room.html"  align="center" target="_blank"><img src="room.jpg" height="100px" width="170" name="home"></a> 
+        </td>
+        <td width="1000">
+            <h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1>
+        </td> 
+        <td>
+            <a href="room.html"  align="right" target="_blank"><img src="room.jpg" height="100px" width="170px" name="home"></a> 
+        </td>
+    </tr>
+</table>
 <a id="up"><a href="#down" target="_self"> <img src='./down.jpg' width="50" height="50" align="right"> </a> 
-<main>
-<br><br><br>
-<table align="center">
+
+<br><table align="center">
     <tr>    
-        <td align="center">
+        <td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href=form.html><button type="submit">Заказать столик</button></a>
         </td>
     </tr>
     </tbody>
-</table><br>
+</table><br><br><br>
+
+<ul>
+    <li><a class="left" href="#home"><b>Home</b></a></li>
+    <li><a href="#button1"><b>Холодные блюда &#x2606;</b></a> </li>
+    <li><a href="#button2"><b>Горячие блюда &#x2606;</b></a></li>
+    <li><a href="#button3"><b>Выпечка &#x2606;</b></a></li></div>
+</ul>
 
 
  <table cellspacing="2" cellpadding="5" align="center" border="2">
-    <a name="button1" ><tbody></a>
+    <a name="button1"><tbody></a>
     <tr>       
         <td width="400" align="center" colspan="3">
             <a href="./Cold dish/Cold dish.html">
@@ -69,12 +108,20 @@
     </tbody>
 </table> 
 <br>
-
-
-<div class="image" align="center">
-    <a href="./Cold dish/Cold dish.html"><img  width="304" height="236"src="./Cold dish/Бадриджани.jpg"></a>
-      </div>
-
+<table cellspacing="2" cellpadding="5" align="center" border="2">
+    <tbody>    
+        <td width="333" height="200">
+            <a href="./Cold dish/Cold dish.html#dish1"><img width="333" src="./Cold dish/Бадриджани.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Cold dish/Cold dish.html#dish2"><img width="333" src="./Cold dish/Лобио.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Cold dish/Cold dish.html#dish3"><img width="333" src="./Cold dish/Пхали.jpg"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 <br><br><br><br>
 <table cellspacing="2" cellpadding="5" align="center" border="2">
     <a name="button2"><tbody></a>
@@ -85,15 +132,22 @@
         </td>
     </tr> 
     </tbody>
-</table>  
+</table> 
 <br>
-
-
-
-<div class="image" align="center">
-        <a href="./Hot dish/Hot dish.html"><img width="304" height="236" src="./Hot dish/Чакапули.jpg"></a>
-          </div>
-  </div>
+<table cellspacing="2" cellpadding="5" align="center" border="2">
+    <tbody>  
+        <td width="333" height="200">
+            <a href="./Hot dish/Hot dish.html#dish1"><img width="333" src="./Hot dish/Чакапули.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Hot dish/Hot dish.html#dish2"><img width="333" src="./Hot dish/Хинкали.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Hot dish/Hot dish.html#dish3"><img width="333" src="./Hot dish/Чашушули.jpg"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 <br><br><br><br>
 <table cellspacing="2" cellpadding="5" align="center" border="2">
     <a name="button3"><tbody></a>
@@ -106,24 +160,45 @@
     </tbody>
 </table> 
 <br>
-
-<div class="image" align="center">
-        <a href="./Bakery/Bakery.html"><img width="304" height="236" src="./Bakery/Хачапури по-аджарски.jpg" ></a>
-      </div>
-
+<table cellspacing="2" cellpadding="5" align="center" border="2">
+    <tbody>    
+        <td width="333" height="200">
+            <a href="./Bakery/Bakery.html#dish1"><img width="333" src="./Bakery/Хачапури по-аджарски.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Bakery/Bakery.html#dish2"><img width="333" src="./Bakery/Мчади.jpg"></a>
+        </td>
+        <td width="333" height="200">
+            <a href="./Bakery/Bakery.html#dish3"><img width="333" src="./Bakery/Хачапури по-мегрельски.jpg"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 <br><br><br><br>
  
 
 <a id="down">
 <a href="#top" target="_self"> <img src='./up.jpg' width="50" height="50" align="right"> </a>
 
+<table align="center">
+    <tr>    
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href=../Homeworks/Passport/Passport.html target="_blank"><button type="submit">ДЗ 1-2</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td>
+            <a href=../Homeworks/Pictures/Homework.html target="_blank"><button type="submit">ДЗ 3</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td>
+            <a href=../Homeworks/Restaurant.html target="_blank"><button type="submit">ДЗ 4</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td>
+            <a href=../Homeworks/algorithm.html target="_blank"><button type="submit">Алгоритмическая задача</button></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
-</div>
 </body>
-</main>
-<div class="card">
-    <div class="card-body">
-    </div>
-</div>
+
 <script src=""></script>
 </html>

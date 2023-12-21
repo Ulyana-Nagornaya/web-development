@@ -2,10 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-	<title>Заказать столик</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+		<title>Заказать столик</title>
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,9 +10,8 @@
             color:antiquewhite
             }
         h1 {
-            color: #fce083;
+            color: #923737;
             text-align: center;
-            text-shadow: 1px 1px 1px #000;
             }
         h3 {
             color: #960c0c;
@@ -28,100 +24,187 @@
                box-shadow: 0px 0px 10px rgba(24, 23, 23, 0.1);
                border-radius: 5px;
         }
-        button[type="submit"] {
-                padding: 5px 10px;
-                background-color: #157218;
-                color: #ffffff;
-                border: none;
-                border-radius: 3px;
-                cursor: pointer;
-                font-size: 14px;
-                font-weight: bold;
-                text-transform: uppercase;
-                text-align: center;
-                transition: background-color 0.3s ease;
-            }
-        button[type="submit"]:hover {
-                background-color: #923737;
-                }
             
 </style>
 <body> 
-        <div class="container">
-
-            <header class="card" style="height: 1.rem; background-image: url(room.jpg);">
-                <div class="card-body bg-color">
-                    <h5 class="card-title"><h1 align="center" name="home">Ресторан грузинской кухни<br>Georgia</h1></h5>
-                </div>
-            </header>
-
+    <table>
+        <tr>
+            <td>
+                <a href="./room.html"  align="center" target="_blank"><img src="./room.jpg" height="100px" width="170" name="home"></a> 
+            </td>
+            <td width="1000">
+                <a href="./index.html"><h1 align="center">Ресторан грузинской кухни<br>Georgia</h1></a>
+            </td> 
+            <td>
+                <a href="./room.html"  align="right" target="_blank"><img src="./room.jpg" height="100px"width="170" name="home"></a> 
+            </td>
+        </tr> 
+    </table>
     <h3 align="center">Бронирование столика</h3>		
 </body>
 
-<main>
-<form action="https://www.ya.ru/search?" id="UserEnter" name="UserEnter" target="_blank">
-<div class="information">        
-      <label class="form-label"><h3>Информация о бронировании</h3></label> <br>
-      <label class="form-label">Количество гостей:</label>
-        <input type="Number" min="0" class="form-control"  style="background-color: bisque;" name="guests" required>
-      <label  class="form-label" >Дата проведения:</label>
-        <input type="date" class="form-control" style="background-color: bisque;" name="user_date" required>
-      <label  class="form-label" >Phone number</label>
-        <input type="text" class="form-control"  style="background-color: bisque;" name="phone-number">
-      <label class="form-label" >E-mail</label>
-        <input type="text" class="form-control" style="background-color: bisque;" name="e-mail">
-</div>
-
-<div class="drinks"> 
-    <label class="form-label"><h3>Напитки (оплата на месте):</h3></label> <br>
-    <label class="form-check-label"  ><h5>Чай</h5></label>
-        <input type="checkbox" class="form-check-input" style="width:25px; height:25px" name="drink" value="tea" checked><br>
-    <label class="form-check-label"><h5>Кофе</h5></label>
-        <input type="checkbox" style="width:25px; height:25px" name="drink" value="coffee" checked><br>
-    <label class="form-check-label" ><h5>Лимонад</h5></label>
-        <input type="checkbox" class="form-check-input" style="width:25px; height:25px" name="drink" value="lemonade" checked><br>
+    <body>
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p>Для bing:<input type="Text"  name="q" value="search"></p>
+            <h3> Информация о бронировании</h3>
+            <p>Количество гостей: <input type="Number" min="0" name="guests" value="" required></p>
+            <p>Место проведения:
+                <select name="places">
+                    <OPTION value="В зале">В зале</OPTION>
+                    <OPTION value="На веранде">На веранде</OPTION>
+                </select>
+            </p>
+            <p>Дата проведения: <input name="user_date" type="date" value="" required></p>
+            
+            <script>
+                function plus(n) {
+                 var price=document.getElementById("price_"+n);
+                 var quantity=document.getElementById("quantity_"+n);
+                 var current=document.getElementById("current_"+n);
+                 var total=document.getElementById("total");
+                 
+                 quantity.innerHTML=1+Number(quantity.innerHTML);
+                 current.innerHTML=Number(current.innerHTML)+Number(price.innerHTML);
+                 total.innerHTML=Number(total.innerHTML)+Number(price.innerHTML);
+                }
+                function minus(n) {
+                 var price=document.getElementById("price_"+n);
+                 var quantity=document.getElementById("quantity_"+n);
+                 var current=document.getElementById("current_"+n);
+                 var total=document.getElementById("total");
+                 
+                 if(quantity.innerHTML!="0") {
+                  quantity.innerHTML=Number(quantity.innerHTML)-1;
+                  current.innerHTML=Number(current.innerHTML)-Number(price.innerHTML);
+                  total.innerHTML=Number(total.innerHTML)-Number(price.innerHTML);
+                  
+                  let t = parseFloat(elementTotal.value);
+                  console.log(t)
+                 }
+                }
+                 
+                </script>
+                 
+                <body>
+                 <h3>Меню</h3>
+                 <table align="center" border=1>
+                  <tr>
+                    <td align="center"></td>
+                    <td align="center">Цена за 1 порцию</td>
+                    <td align="center">Количество порций</td>
+                    <td align="center">Итог</td></tr>
+                 
+                  <tr>
+                   <td align="center">Бадриджани</td>
+                   <td align="center"><b id="price_1">450</b>₽ </td>
+                   <td align="center"><b onclick="plus(1)">[+]</b> <b id="quantity_1">0</b>&nbsp;<b onclick="minus(1)">[-]</b></td>
+                   <td align="center"><b id="current_1">0</b> ₽</td>
+                  </tr>
+                  
+                  <tr>
+                   <td align="center">Лобио</td>
+                   <td align="center"><b id="price_2">360</b> ₽</td>
+                   <td align="center"><b onclick="plus(2)">[+]</b> <b id="quantity_2">0</b>&nbsp;<b onclick="minus(2)">[-]</b></td>
+                   <td align="center"><b id="current_2">0</b> ₽</td>
+                  </tr>
+                  
+                  <tr>
+                   <td align="center">Ассорти пхали</td>
+                   <td align="center"><b id="price_3">550</b>₽ </td>
+                   <td align="center"><b onclick="plus(3)">[+]</b> <b id="quantity_3">0</b>&nbsp;<b onclick="minus(3)">[-]</b></td>
+                   <td align="center"><b id="current_3">0</b> </td>
+                  </tr>
     
-</div>
+                  <tr>
+                    <td align="center">Чакапули</td>
+                    <td align="center"><b id="price_4">490</b> ₽</td>
+                    <td align="center"><b onclick="plus(4)">[+]</b> <b id="quantity_4">0</b>&nbsp;<b onclick="minus(4)">[-]</b></td>
+                    <td align="center"><b id="current_4">0</b> </td>
+                   </tr>
+    
+                   <tr>
+                    <td align="center">Ассорти хинкали</td>
+                    <td align="center"><b id="price_5">550</b> ₽</td>
+                    <td align="center"><b onclick="plus(5)">[+]</b> <b id="quantity_5">0</b>&nbsp;<b onclick="minus(5)">[-]</b></td>
+                    <td align="center"><b id="current_5">0</b> </td>
+                   </tr>
+    
+                   <tr>
+                    <td align="center">Чашушули</td>
+                    <td align="center"><b id="price_6">480</b>₽ </td>
+                    <td align="center"><b onclick="plus(6)">[+]</b> <b id="quantity_6">0</b>&nbsp;<b onclick="minus(6)">[-]</b></td>
+                    <td align="center"><b id="current_6">0</b> </td>
+                   </tr>
+    
+                   <tr>
+                    <td align="center">Хачапури по-аджарски</td>
+                    <td align="center"><b id="price_7">450</b> ₽</td>
+                    <td align="center"><b onclick="plus(7)">[+]</b> <b id="quantity_7">0</b>&nbsp;<b onclick="minus(7)">[-]</b></td>
+                    <td align="center"><b id="current_7">0</b> </td>
+                   </tr>
+    
+                   <tr>
+                    <td align="center">Мчади</td>
+                    <td align="center"><b id="price_8">490</b> ₽</td>
+                    <td align="center"><b onclick="plus(8)">[+]</b> <b id="quantity_8">0</b>&nbsp;<b onclick="minus(8)">[-]</b></td>
+                    <td align="center"><b id="current_8">0</b> </td>
+                   </tr>
+    
+                   <tr>
+                    <td align="center">Хачапури по-мегрельски</td>
+                    <td align="center"><b id="price_9">420</b>₽ </td>
+                    <td align="center"><b onclick="plus(9)">[+]</b> <b id="quantity_9">0</b>&nbsp;<b onclick="minus(9)">[-]</b></td>
+                    <td align="center"><b id="current_9">0</b> </td>
+                   </tr>
+                 </table>
+                 
+                 ИТОГО:<b id="totalvalue" type="Number" name="total" value="">0</b> ₽<br><br>
+                 <p>Результат: <span id="total"></span></p>
+                </body>
 
 
-<div class="payment"
-            <label class="form-label"><h3>Оплата заказа:</h3></label> <br>
-            <label class="form-check-label" ><h5>Способ оплаты:</h5></label><br>
-            <label class="form-check-label"><h5>Мир</h5></label>
-              <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="mir"><br>
-            <label class="form-check-label" ><h5>Visa</h5></label>
-              <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="Visa"><br>
-            <label class="form-check-label" ><h5>Mastercard</h5></label>
-              <input type="radio" class="form-check-input" style="width:25px; height:25px" name="payment" value="Mastercard"><br><br>
+
+                <h3>Напитки (оплата на месте):</h3>
+                    <input type="Checkbox" name="drink"  value="tea" checked> Чай
+                    <input type="Checkbox" name="drink"   value="coffee" checked> Кофе
+                    <input type="Checkbox" name="drink" value="lemonade" checked> Лимонад
+                    <input type="Checkbox" name="drink" value="apple-juice" checked> Яблочный сок
+                    <input type="Checkbox" name="drink" value="orange-juice" checked> Апельсиновый сок
+                    <input type="Checkbox" name="drink" value="alcohol" checked> Алкогольные напитки
+                </p><br><br>
+
+
+            <h3> Оплата заказа</h3>
+            <p>Способ оплаты:<br>
+                <input type="Radio" name="payment" value="mir">мир<br>
+                <input type="Radio" name="payment" value="Visa" checked >Visa<br>
+                <input type="Radio" name="payment" value="Mastercard" checked >Mastercard
+            </p><br>
+            <p>Номер карты: <input name="cardnumber" type="text" value="" maxlength="16"></p>
+            <p>Срок действия: <input name="validity" type="date" value="" required></p>
+            <p>CVV/CVC: <input name="CVV" type="Password" size="3" value="" max_lenght="3" required></p> 
+            
+            
+            <h3> Личная информация</h3><br>
+            <p>Имя:<input type="Text"  name="name" value="" maxlength="20"></p>
+            <p>Фамилия: <input type="Text" name="last_name" size=20 value="" maxlength="20"></p>  
+            <p>Мобильный телефон: <input type="Text" name="telnumber" size=10 value="" maxlength="11" required></p>
+            <p>E-mail: <input type="Text" name="Text"value="" maxlength="20" required</p>
+
+            <h3> Дополнительная информация</h3>
+                <br>
+                <TEXTAREA cols=80 name="textarea" rows=4>Комментарии к заказу</TEXTAREA> 
+            </p>
         
-            <label class="form-check-label" ><h5>Номер карты:</h5></label><br>
-              <input type="text" maxlength="16" class="form-control" style="background-color: bisque; width:200px; height:25px" name="cardnumber" required><br>
-            <label class="form-check-label" ><h5>Срок действия:</h5></label><br>
-              <input type="date" class="form-control" style="background-color: bisque; width:200px; height:25px" name="validity" required><br>
-             <label class="form-check-label"><h5>CVV/CVC:</h5></label><br>
-              <input type="Password" size="3" max="3" class="form-control" style="background-color: bisque; width:200px; height:25px" name="CVV" required><br>
-        </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
- 
-
-  <table align="center">
-    <tr>    
-        <td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=shop.html><button type="submit">Перейти к выбору заказа</button></a>
-        </td>
-    </tr>
-    </tbody>
-</table><br><br><br>
-
+            <input name="title" type="hidden" value="order">
+        
+            <p>
+                <input type="Reset"  name="Reset"  value="Обновить">
+                <input type="Submit" name="submit"  value="Отправить">
+            </p>
         
         </form>
-    </main>
+        
     </body>
-    <div class="card">
-        <div class="card-body">
-        </div>
-    </div>
         
 </html>
